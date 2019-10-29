@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title><?php print 'Aš, '. date('l') . ' ir PHP' ?> !</title>
-  </head>
-  <body>
-      <h1>Erikas - HTML <?php print 'ir PHP' ?> asas jau nuo <?php print date('Y').' metų' ?> </h1>
-    <p>Moku kurti statinį turinį</p>
-    <p>Viskas prasidėjo:  <?php print date('m').' mėnesio '. date('d').' dieną';?></p>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <title>PHP lydės ir <?php print date('Y-m-d', strtotime('+1 day')).'!'; ?> </title>
+    </head>
+    <body>
+        <h1>Erikas - PHP su manim buvo ir <?php print date('H', strtotime('+1 hour')).' valandą!'?> </h1>
+        <p> <?php print date('Y', strtotime('+1 year'))?> ne už kalnų!</p>
+    </body>
 </html>
